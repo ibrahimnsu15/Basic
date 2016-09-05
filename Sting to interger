@@ -7,3 +7,10 @@ int main(){
 
     return 0;
 }
+or
+
+int main(){
+    char str[3] ={"132"};
+    int n = atoi(str);
+    printf("%d\n",n);
+}
