@@ -1,0 +1,10 @@
+#include <sstream>
+int main(){
+
+    int a=102;
+    stringstream ss;
+    ss<<a;
+    string str = ss.str();
+    cout<<str;
+    return 0;
+}
