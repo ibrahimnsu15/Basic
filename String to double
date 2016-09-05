@@ -1,0 +1,8 @@
+int main(){
+
+    string str = "1212.232";
+    double num = atof(str.c_str());
+    cout<<num;
+
+    return 0;
+}
