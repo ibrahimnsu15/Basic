@@ -1,0 +1,9 @@
+
+int main(){
+
+    string str = "1212 ishs";
+    int n = atoi(str.c_str());
+    cout<<n; //output 1212
+
+    return 0;
+}
