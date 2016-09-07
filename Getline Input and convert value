@@ -1,0 +1,25 @@
+
+int main(){
+
+    string str;
+
+    getline(cin,str);
+
+    stringstream ss;
+
+    ss << str;
+
+    int num;
+    vector <int > v;
+
+    while(ss >> num){
+        v.push_back(num);
+    }
+
+    vector <int > :: iterator it;
+
+    for(it = v.begin() ; it != v.end() ; it++){
+        cout<<*it<<endl;
+    }
+
+}
