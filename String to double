@@ -1,10 +1,18 @@
 #include <iostream>
 #include <cstdlib>
 using namespace std;
+
+
+double ToDouble(string str){
+    double num = atof(str.c_str());
+    return num;
+}
+
+
 int main(){
 
     string str = "1212.232";
-    double num = atof(str.c_str());
+    double num = ToDouble(str);
     cout<<num;
 
     return 0;
