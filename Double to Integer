@@ -1,0 +1,25 @@
+#include <iostream>
+
+#define range 4294967295
+
+unsing namespace std;
+
+int BinarySearch(int low,int high,double key){
+    int mid = (low+high)/2;
+    if(key-mid <= 0.1 && mid - key <= 0.1){
+        return mid;
+    }
+
+    if(key - mid > 0.0 ){
+        return BinarySearch(mid+1,high,key);
+    }else{
+        return BinarySearch(low,mid-1,key);
+    }
+
+}
+
+int Conver_Int(double n){
+    double v = n*100;
+    int ans = BinarySearch(1,range,v);
+    return ans;
+}
